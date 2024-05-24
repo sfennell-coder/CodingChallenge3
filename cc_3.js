@@ -22,4 +22,8 @@ class EV extends car{
     constructor(charge){
         this.charge = charge;
     }
+    chargeBattery(chargeTo){
+        this.charge = chargeTo;
+        console.log(this.make, " battery charged to ",this.charge,"%");
+    }
 }
