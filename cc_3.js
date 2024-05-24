@@ -34,3 +34,8 @@ class EV extends car{
         console.log(this.make, " going at ", this.speed, " km/h, with a charge of ", this.charge, "%"); 
     }
 }
+
+//4.) Create an EV object using the provided test data and call accelerate, brake, and chargeBattery.
+const car1 = new EV('Tesla', 120, 23);
+console.log(car1.make, " starting at: ", car1.speed, " km/h, charge is ", car1.chargeBattery, "%");
+console.log("Speed changing:\n", car1.accelerate(), "\n", car1.chargeBattery(), "\n", car1.accelerate(), "\n", car1.chargeBattery(), "\n", car1.brake());
